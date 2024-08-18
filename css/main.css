@@ -1,0 +1,611 @@
+/* main.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.font-capture {
+    font-family: sedan;
+}
+
+
+main {
+    /* padding: 0px 50px 0 50px; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+nav {
+   position: relative;
+   display: flex;
+   gap:10px;
+   align-items: center;
+   height: 80px;
+   /* background-color: blue; */
+}
+
+nav .img_wrapper {
+    width: 20%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+nav .img_logo {
+    aspect-ratio: 20/12;
+    /* width: 16vw; */
+    /* background-color: aquamarine; */
+    object-fit: cover;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    /* background-color: red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: 600;
+    font-size: small;
+}
+
+nav ul li a {
+    color: rgb(27, 26, 26);
+}
+
+nav ul li:hover {
+    /* background-color: yellow; */
+    padding: 4px;
+}
+
+.hamburger_img {
+    display: none;
+    width: 40px;
+    height: auto;
+}
+
+.navMenu_holder {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 3px 14px 56px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 14px 56px -19px rgba(0,0,0,0.75);
+    box-shadow: 3px 14px 56px -19px rgba(0,0,0,0.75);
+}
+
+.close_img {
+    width: 30px;
+    height: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.navMenu_holder ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* background-color: #FBA794; */
+}
+.signup_btn {
+    border: 2px solid gray;
+    padding: 2px;
+}
+
+/* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
+header {
+    position: relative;
+    height: 100vh;
+    /* background-color: blueviolet; */
+}
+
+.padding_uniform {
+    padding: 0px 50px 0 50px;
+}
+.decore_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.mainHeader_wrapper {
+    /* background-color: blueviolet; */
+    display: flex;
+    margin-top: 20px;
+}
+.headerContent_wrapper {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: aquamarine; */
+}
+
+.header_buttonWrapperSmallScreen{
+    display: none;
+    margin-top: 10px;
+}
+
+.headerImg_Wrapper {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+    /* width: 100%; */
+    /* background-color: aqua; */
+}
+
+.header_img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+header h1 {
+    color:#FBA794;
+    font-size: large;
+}
+
+header h2 {
+    color: #181B3F;
+    font-weight: 900;
+    /* font-size: 70px; */
+    font-size: 6vw;
+    line-height: 1;          /* Set line-height to 1 to remove extra space */
+    margin: 0;    
+    /* background-color: aqua; */
+    height: min-content;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.headerBtn_left {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.headerBtn_right {
+    background-color: transparent;
+    text-transform: capitalize;
+    width: max-content;
+}
+.headerBtn_right span {
+    background-color: #DB6950;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section h2 {
+    font-family: sedan;
+    font-weight: 900;
+    font-size: clamp(25px, 3vw, 80px);
+    line-height: 1;
+}
+
+.card_holder {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+.decoreSpring_img {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.card {
+    background-color: white;
+    width: calc(100%/3);
+    border-radius: 25px;
+    -webkit-box-shadow: 3px 14px 45px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 14px 45px -19px rgba(0,0,0,0.75);
+    box-shadow: 3px 14px 45px -19px rgba(0,0,0,0.75);
+}
+
+.card_img {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card_contentWrapper {
+    color: gray;
+    font-size: medium;
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #EAA70E; */
+}
+
+.card_contentTop {
+    /* background-color: #EAA70E; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_contentBottom {
+
+}
+
+
+.booking .header {
+    width: 100%;
+    text-align: start;
+}
+
+.Booking_mainWrapper {
+    display: flex;
+}
+.bookingLeft_wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bookingLeft_wrapper h2{
+    font-family: sedan;
+    font-weight: 900;
+    font-size: clamp(25px, 3vw, 80px);
+    line-height: 1;
+}
+.bookingLeft_wrapper .step_holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.step .img_holder {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.step .holder_one {
+    background-color: #F0BB1F;
+}
+.step .holder_two {
+    background-color: #F15A2B;
+}
+.step .holder_three {
+    background-color: #006380;
+}
+.step_img {
+    width: 20px;
+    height: 20px;
+}
+.step_textWrapper .textHeader{
+    line-height: 1;
+    margin: 0;
+}
+.step_textWrapper p{
+    margin-top: 6px;
+    color: gray;
+}
+.bookingRight_wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.bookingRight_wrapper .contentWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 36px -13px 41px 16px rgba(223,239,249,1);
+    -moz-box-shadow: 36px -13px 41px 16px rgba(223,239,249,1);
+    box-shadow: 36px -13px 41px 16px rgba(223,239,249,1);
+}
+.bookingRight_wrapper .contentWrapper .mainImg{
+    border-radius: 10px;
+    width: 100%;
+    height: 40%;
+}
+.bookingRight_wrapper .contentWrapper .textWrapper{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #DB6950; */
+}
+
+.textWrapper .date {
+    color: gray;
+}
+.textWrapper .iconWrapper {
+    display: flex;
+    gap: 30px;
+}
+.iconImg_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(128, 128, 128,0.1);
+    padding: 5px;
+    border-radius: 50%;
+}
+.iconWrapper .iconImg_wrapper .icon_img{
+    width: 15px;
+    height: 15px;
+}
+
+.textWrapper .leftCard_bottom {
+    color: gray;
+    display: flex;
+    gap: 20px;
+}
+
+.leftCard_bottom .iconImg {
+    width: 20px;
+    height: 20px;
+}
+
+.bookingRight_absolute {
+    /* width: 60%; */
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    transform: translateX(20%);
+    display: flex;
+    gap: 10px;
+    -webkit-box-shadow: 0px 0px 10px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 10px -6px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px -6px rgba(0,0,0,1);
+}
+.bookingRight_absolute img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.absolute_contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.absolute_contentWrapper .draw-line {
+    width: 100%;
+    height: 5px;
+    background-color:rgb(128, 128, 128,0.2);
+    border-radius: 10px;
+}
+.absolute_contentWrapper p span {
+    color: #8A79DF;
+}
+.draw-line .innerLine {
+    width: 40%;
+    height: 100%;
+    background-color: #8A79DF;
+    border-radius: 10px;
+}
+
+
+/* Large devices (small laptops/desktops) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .navList_holder {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .hamburger_img {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .navMenu_holder{
+        display: flex;
+        flex-direction: column;
+    }
+    .hideMenu {
+        display: none;
+    }
+    .padding_uniform {
+        padding: 0px 25px 0 25px;
+    }
+
+    header {
+        height: max-content;
+    }
+
+    .mainHeader_wrapper {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .headerContent_wrapper {
+        width: 100%;
+    }
+
+    .header_buttonWrapper {
+        display: none;
+    }
+
+    .header_buttonWrapperSmallScreen {
+        display: block;
+    }
+
+    .headerImg_Wrapper {
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .header_img {
+        height: 60vw;
+        width: fit-content;
+    }
+
+    .card_holder {
+        /* background-color: #EAA70E; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 60vw;
+    }
+
+    .Booking_mainWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .bookingLeft_wrapper {
+        width: 100%;
+    }
+    .bookingRight_wrapper {
+        width: 100%;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav .img_logo {
+        aspect-ratio: 1/1;
+    }
+
+    .hamburger_img {
+        width: 30px;
+    }
+    .navMenu_holder {
+        width: 90%;
+    }
+
+    .header_img {
+        height: 80vw;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1281px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Media Query for Small Screens */
+/* @media (max-width: 768px) {
+    .mainHeader_wrapper {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .headerContent_wrapper,
+    .headerImg_Wrapper {
+        width: 100%;
+    }
+
+    header h1, header h2 {
+        font-size: medium;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        font-size: larger;
+        padding: 8px 0;
+    }
+
+    .signup_btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+} */
