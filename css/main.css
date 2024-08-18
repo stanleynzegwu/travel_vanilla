@@ -243,7 +243,7 @@ button {
     display: flex;
     gap: 30px;
     box-sizing: border-box;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .decoreSpring_img {
@@ -593,7 +593,7 @@ button {
         align-items: center;
     }
     .card {
-        width: 60vw;
+        width: 100vw;
     }
 
     .Booking_mainWrapper {
@@ -643,6 +643,9 @@ button {
 
     .header_img {
         height: 80vw;
+    }
+    .card_holder {
+        padding: 0;
     }
 
     .card {
